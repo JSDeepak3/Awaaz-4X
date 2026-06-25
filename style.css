@@ -14,6 +14,14 @@ body{
     font-family:Arial, sans-serif;
 }
 
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -174,26 +182,32 @@ body{
     cursor:pointer;
 }
 
-/* MOBILE */
 
+/* Mobile View */
 @media(max-width:768px){
 
-    .navbar{
-        flex-direction:column;
-        gap:15px;
+    .hamburger{
+        display:block;
     }
 
     .nav-links{
+        display:none;
         flex-direction:column;
-        align-items:center;
-        gap:10px;
+        position:absolute;
+        top:70px;
+        right:20px;
+        width:200px;
+        background:rgba(0,0,0,0.95);
+        padding:20px;
+        border-radius:10px;
+        text-align:center;
     }
 
-    .hero-content h1{
-        font-size:2.5rem;
+    .nav-links.active{
+        display:flex;
     }
 
-    .hero-content p{
-        font-size:1rem;
+    .nav-links li{
+        margin:15px 0;
     }
 }

@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Awaaz</title>
 </head>
+
 <body>
 
     <!-- Navbar -->
      <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">
-                    <img src="logo.jpeg" alt="Awaaz 4X Logo">
-                </a>"
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Awaaz Logo">
+            <span>AWAAZ 4X</span>
+        </div>
 
-            <ul class="nav-links">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Conatact">Contact</a></li>
-            </ul>
-            </nav>
-     </header>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+            
+        </div>
+    </nav>
+</header>
 
     <!-- Hero Section-->
      <section class="hero">
@@ -65,4 +72,5 @@
         </form>
      </section>
     </body>
+    <script src="script.js"></script>
 </html>
